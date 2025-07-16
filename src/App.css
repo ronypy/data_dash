@@ -1,0 +1,148 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f9f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #0001;
+  padding: 32px 26px 38px 26px;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #234;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  margin-bottom: 26px;
+}
+.stat {
+  background: #f2f6fb;
+  padding: 14px 24px;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 2px 8px #00000010;
+}
+.stat-value {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #25497c;
+}
+.stat-label {
+  font-size: 0.98rem;
+  color: #688;
+  margin-top: 3px;
+}
+
+.controls {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+.search-input, .type-select {
+  padding: 7px 12px;
+  border: 1.5px solid #ccd;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f4f5fa;
+  transition: border-color 0.18s;
+}
+.search-input:focus, .type-select:focus {
+  border-color: #4374c5;
+  outline: none;
+}
+
+.objects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+  background: white;
+}
+.objects-table th,
+.objects-table td {
+  padding: 9px 7px;
+  text-align: left;
+}
+.objects-table th {
+  background: #eef1f7;
+  font-weight: 600;
+  color: #345;
+}
+.objects-table tr:nth-child(even) {
+  background: #f7f9fb;
+}
+.no-results {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.loading, .error {
+  text-align: center;
+  color: #a55;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+.count-note {
+  text-align: right;
+  font-size: 0.97rem;
+  margin-top: 10px;
+  color: #789;
+}
+
